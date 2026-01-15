@@ -1,0 +1,167 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: white;
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #e3f2fd;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tombol Dark Mode */
+#darkToggle {
+    float: right;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* DARK MODE */
+body.dark {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+body.dark .navbar {
+    background-color: #1f1f1f;
+}
+
+body.dark .card {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+}
+
+body.dark .skills li {
+    background-color: #2a2a2a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #darkToggle {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 80%;
+    }
+}
